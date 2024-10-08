@@ -2,8 +2,8 @@ package classes.functions;
 
 public class Function {
 
-    public int generateRandomNumber() {
-        return (int) (Math.random() * 100); // Número aleatorio entre 0 y 99
+    public static int generateRandomNumber() {
+        return (int) (Math.random() * 100);
     }
 
     public String generateGreeting(String name, int age) {
@@ -12,6 +12,7 @@ public class Function {
 
     // Función con return vacío
     public void printMessageIfPositive(int number) {
+
         if (number < 0) {
             System.out.println("El número es negativo, terminando la función.");
             return; // Return vacío, finaliza la ejecución de la función
@@ -20,6 +21,14 @@ public class Function {
     }
 
     // Sobrecarga de funciones (mismo nombre, diferentes tipos de parámetros)
+    public double add(double a) {
+        return a + 2;
+    }
+
+    public int add(int a) {
+        return a + 2;
+    }
+
     public int add(int a, int b) {
         return a + b;
     }
@@ -28,12 +37,16 @@ public class Function {
         return a + b;
     }
 
+    public double add(double a, double b, double c) {
+        return a + b + c;
+    }
+
     // Función recursiva para calcular el factorial
-    public int calculateFactorial(int n) {
+    public int calculateFactorial(int n) {  // 5
         if (n == 0 || n == 1) {
             return 1; // Caso base
         } else {
-            return n * calculateFactorial(n - 1); // Llamada recursiva
+            return n * calculateFactorial(n - 1); // 4 // 3 // 2 // 1
         }
     }
 

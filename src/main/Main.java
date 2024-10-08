@@ -6,8 +6,6 @@ import classes.conditionals.*;
 import classes.functions.Function;
 import classes.loops.Loop;
 
-//* 5579 0701 3143 8049 Tarjeta debito Tia elia
-
 //* ★
 //? ½
 //! ✕
@@ -57,9 +55,7 @@ public class Main {
 
         Function function = new Function();
 
-        function.add(0, 0);
-
-        function.add(0.2, 0.2);
+        function.printNumbers(1, 2, 3, 4, 5, 6, 3, 1, 2, 4, 5);
 
     }
 
